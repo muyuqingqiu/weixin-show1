@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>微信</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<style>
+*{
+	 padding: 0;
+	 margin: 0;
+}
+html{
+	overflow: hidden;
+}
+li{
+	 list-style: none;
+}
+#main{
+	width: 100%;
+	height: 1008px;
+	overflow: hidden;
+	position: relative;
+	left: 50%;
+	top:0;
+}
+#main #content{
+	width: 100%;
+	height: 100%;
+}
+#main #content li{
+	width: 100%;
+	height: 100%;
+	background-size:100% 1008px!important;
+	position: absolute;
+	left:0;
+	top:0;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+#main #content .active{
+	visibility: visible;
+	opacity: 1;
+	z-index: 5;
+}
+#main #content li .wrap{
+	width:640px;
+	height: 1008px;
+	margin: 0 auto;
+}
+#main #content li:nth-of-type(1){
+	background: url(img/page0-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(1) .main-image{
+	position: absolute;
+	top:50%;
+	margin-top: -320px;
+}
+#main #content li:nth-of-type(1) .main-image .text0{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -104px;
+	margin-top: -44px;
+	z-index: 1;
+	opacity:0;
+	animation:2s  page0Text0show infinite 3s;
+}
+#main #content li:nth-of-type(1) .title{
+	position: absolute;
+	left: 50%;
+	margin-left: -196px;
+	top: -105px;
+	transition: 1s 3s;
+}
+@keyframes page0Text0show{
+	0%{transform:scale(0);opacity:0;}
+	40%{transform: scale(1);opacity:1;}
+	50%{transform:scale(0.7);opacity:1;}
+	60%{transform: scale(1);opacity:1;}
+	70%{transform: scale(0.8);opacity:1;}
+	80%{transform: scale(1);opacity:1;}
+	90%{transform: scale(0.9);opacity:1;}
+	100%{transform: scale(1);opacity:1;}
+}
+
+#main #content li:nth-of-type(2){
+	background: url(img/all-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(3){
+	background: url(img/page2-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(4){
+	background: url(img/page3-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(5){
+	background: url(img/page4-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(6){
+	background: url(img/page5-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(7){
+	background: url(img/page6-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(8){
+	background: url(img/page7-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(9){
+	background: url(img/page8-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(10){
+	background: url(img/page9-bg.png) no-repeat;
+}
+#main #content li:nth-of-type(11){
+	background: url(img/all-bg.png) no-repeat;
+}
+</style>
+<script src="js\jquery-1.12.1.min.js"></script>
+<script>
+var desW = 640;
+var desH = 1008;
+var oLdViewH = $(window).height();
+var scale = oLdViewH/desH;
+document.write('<meta name="viewport" content="width=device-width,initial-scale=' + scale + ',user-scalable=no"/>')
+var viewW = $(window).width();
+var viewH = $(window).height();
+</script>
+<script src="index.js"></script>
+
+</head>
+<body>
+<div id="main">
+	<div class="eidt"></div>
+	<div class="arrow"></div>
+	<ul id="content">
+		<li class="active">
+			<div class="wrap">
+				<div class="title">
+					<img src="img\page0-title.png" alt="阿斯顿">
+				</div>
+				<div class="main-image">
+					<img src="img/page0-image.gif">
+					<img src="img/page0-text0.png" alt="云行销" class="text0" />
+				</div>
+			</div>
+		</li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+		<li></li>
+	</ul>
+</div>
+</body>
+
+
+</html>
