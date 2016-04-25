@@ -4,116 +4,7 @@
 <meta charset="utf-8">
 <title>微信</title>
 <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-<style>
-*{
-	 padding: 0;
-	 margin: 0;
-}
-html{
-	overflow: hidden;
-}
-li{
-	 list-style: none;
-}
-#main{
-	width: 100%;
-	height: 1008px;
-	overflow: hidden;
-	position: relative;
-	left: 50%;
-	top:0;
-}
-#main #content{
-	width: 100%;
-	height: 100%;
-}
-#main #content li{
-	width: 100%;
-	height: 100%;
-	background-size:100% 1008px!important;
-	position: absolute;
-	left:0;
-	top:0;
-	opacity: 0;
-	transition: opacity 0.5s;
-}
-#main #content .active{
-	visibility: visible;
-	opacity: 1;
-	z-index: 5;
-}
-#main #content li .wrap{
-	width:640px;
-	height: 1008px;
-	margin: 0 auto;
-}
-#main #content li:nth-of-type(1){
-	background: url(img/page0-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(1) .main-image{
-	position: absolute;
-	top:50%;
-	margin-top: -320px;
-}
-#main #content li:nth-of-type(1) .main-image .text0{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	margin-left: -104px;
-	margin-top: -44px;
-	z-index: 1;
-	opacity:0;
-	animation:2s  page0Text0show infinite 3s;
-}
-#main #content li:nth-of-type(1) .title{
-	position: absolute;
-	left: 50%;
-	margin-left: -196px;
-	top: -105px;
-	transition: 1s 3s;
-}
-@keyframes page0Text0show{
-	0%{transform:scale(0);opacity:0;}
-	40%{transform: scale(1);opacity:1;}
-	50%{transform:scale(0.7);opacity:1;}
-	60%{transform: scale(1);opacity:1;}
-	70%{transform: scale(0.8);opacity:1;}
-	80%{transform: scale(1);opacity:1;}
-	90%{transform: scale(0.9);opacity:1;}
-	100%{transform: scale(1);opacity:1;}
-}
-
-#main #content li:nth-of-type(2){
-	background: url(img/all-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(3){
-	background: url(img/page2-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(4){
-	background: url(img/page3-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(5){
-	background: url(img/page4-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(6){
-	background: url(img/page5-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(7){
-	background: url(img/page6-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(8){
-	background: url(img/page7-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(9){
-	background: url(img/page8-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(10){
-	background: url(img/page9-bg.png) no-repeat;
-}
-#main #content li:nth-of-type(11){
-	background: url(img/all-bg.png) no-repeat;
-}
-</style>
+<link rel="stylesheet" href="index.css" media="screen" title="no title" charset="utf-8">
 <script src="js\jquery-1.12.1.min.js"></script>
 <script>
 var desW = 640;
@@ -129,7 +20,7 @@ var viewH = $(window).height();
 </head>
 <body>
 <div id="main">
-	<div class="eidt"></div>
+	<audio src="0.mp3" autoplay="autoplay"></audio>
 	<div class="arrow"></div>
 	<ul id="content">
 		<li class="active">
@@ -143,18 +34,163 @@ var viewH = $(window).height();
 				</div>
 			</div>
 		</li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
-		<li></li>
+		<li>
+			<div class="wrap">
+				<div class="title">
+					<img src="img/page1-image4.png" alt="title">
+				</div>
+				<div class="images">
+					<img src="img/page1-image1.png" alt="1" class="text1">
+					<img src="img/page1-image2.png" alt="2" class="text2">
+					<img src="img/page1-image3.png" alt="3" class="text3">
+					<img src="img/page1-image0.png" alt="0" class="main-img">
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page2-text0.png" alt="text0"></div>
+				<div class="texts">
+					<img src="img/page2-image1.png" class="image0">
+					<img src="img/page2-image4.png" class="image1">
+					<img src="img/page2-image5.png" class="image2">
+					<img src="img/page2-image3.png" class="image3">
+					<img src="img/page2-image0.png" class="image4">
+					<img src="img/page2-image2.png" class="image5">
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page3-text0.png" alt="text0"></div>
+				<div class="main-image"><img src="img/page3-image0.png" alt="image0"></div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page4-text0.png" alt="title"></div>
+				<div class="texts">
+					<img src="img/page4-text1.png" alt="image0" class="image0">
+					<img src="img/page4-text2.png" alt="image0" class="image1">
+					<img src="img/page4-text3.png" alt="image0" class="image2">
+					<img src="img/page4-text4.png" alt="image0" class="image3">
+					<img src="img/page4-text5.png" alt="image0" class="image4">
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page5-text0.png" alt="text0"></div>
+				<div class="main-image"><img src="img/page5-image0.png" alt="image0"></div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page6-text0.png" alt="text0"></div>
+				<div class="main-image">
+					<img src="img/page6-image0.png" alt="image0" class="image0">
+					<img src="img/page6-image1.png" alt="image0" class="image1">
+					<img src="img/page6-image2.png" alt="image0" class="image2">
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page7-text0.png" alt="text0"></div>
+				<div class="main-image">
+					<img src="img/page7-image0.png" alt="image0" class="image0">
+					<img src="img/page7-image1.png" alt="image1" class="image1">
+					<img src="img/page7-image2.png" alt="image2" class="image2">
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page8-text0.png" alt="text0"></div>
+				<div class="main-image"><img src="img/page8-image0.png" alt="image0"></div>
+				<div class="texts">
+					<img src="img/page8-image1.png" alt="image1" class="image0">
+					<img src="img/page8-image2.png" alt="image2" class="image1">
+					<img src="img/page8-image3.png" alt="image3" class="image2">
+					<img src="img/page8-image4.png" alt="image4" class="image3">
+					<img src="img/page8-image5.png" alt="image5" class="image4">
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page9-text0.png" alt="title"></div>
+				<div class="main-image">
+					<img src="img/page9-image0.png" alt="image0" class="image0">
+					<img src="img/page9-image1.png" alt="image1" class="image1">
+					<img src="img/page9-image1.png" alt="image2" class="image2">
+					<img src="img/page9-image1.png" alt="image3" class="image3">
+				</div>
+			</div>
+		</li>
+		<li>
+			<div class="wrap">
+				<div class="title"><img src="img/page10-text0.png" alt="text0"></div>
+				<div class="main-image"><img src="img/page10-image0.png" alt="image0" class="image0"><img src="img/page10-image1.png" alt="image1" class="image1"></div>
+				<div class="texts"><img src="img/page10-text1.png" alt="text1" class="text1"><img src="img/page10-text2.png" alt="text2" class="text2"></div>
+			</div>
+		</li>
 	</ul>
 </div>
+
+<script>
+var oC = $('<canvas id="c1" width="' + viewW + '" height="' + viewH + '"></canvas>').get(0);
+var oGc = oC.getContext('2d');
+document.body.appendChild(oC);
+loadImg();
+function loadImg(){
+    var arr = ['page0-bg.png','page2-bg.png','page3-bg.png','page4-bg.png','page5-bg.png','page6-bg.png','page7-bg.png','page8-bg.png','page9-bg.png','all-bg.png','page0-image.gif','page0-text0.png','page0-text0.png','page1-image0.png','page1-image1.png','page1-image2.png','page1-image3.png','page1-image4.png','page2-image0.png','page2-image1.png','page2-image2.png','page2-image3.png','page2-image4.png','page2-image5.png','page2-text0.png','page3-image0.png','page3-text0.png','page4-text0.png','page4-text1.png','page4-text2.png','page4-text3.png','page4-text4.png','page4-text5.png'];
+    var imgNow = 0;
+    $.each(arr,function(i,img){
+        var yImg = new Image();
+        yImg.src = 'img/'+img
+        yImg.onload = function(){
+            imgNow++;
+			setCanvas();
+			console.log(imgNow);
+            if(imgNow==arr.length){
+				$('#c1').animate({opacity:0},1000,function() {
+						$(this).remove()
+				})
+
+            }
+        };
+        yImg.error = function(){
+            $('#c1').animate({opacity:0},1000,function(){
+                $(this).remove();
+            });
+        }
+    });
+
+	function setCanvas() {
+		oGc.clearRect(0,0,oC.width,oC.height);
+		oGc.fillStyle = 'white';
+	    oGc.beginPath();
+	    oGc.arc(viewW/2,viewH/2,50,0,360*Math.PI/180);
+		oGc.fill();
+	    oGc.closePath();
+
+		oGc.fillStyle = 'yellow';
+		oGc.beginPath();
+		oGc.moveTo(viewW/2,viewH/2);
+		oGc.arc(viewW/2,viewH/2,50,-90*Math.PI/180,imgNow/arr.length*360*Math.PI/180);
+		oGc.fill();
+		oGc.closePath();
+
+		oGc.fillStyle = 'black';
+		oGc.beginPath();
+		oGc.arc(viewW/2,viewH/2,40,0,360*Math.PI/180);
+		oGc.fill();
+		oGc.closePath();
+	}
+}
+
+</script>
 </body>
 
 
